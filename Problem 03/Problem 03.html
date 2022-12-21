@@ -1,0 +1,121 @@
+<html>
+<head>
+
+<script type="text/javascript">
+
+function calculate()
+{
+	var msg = 'NOTAS: \r\n';
+	
+	var taka = document.getElementById("inputA").value;
+	
+	var div = Math.trunc(taka / 100);
+	var rem = taka % 100;
+	
+	msg = msg + div + ' nota(s) de R$ 100.00\r\n';
+	
+	taka = rem;
+	
+	div = Math.trunc(taka / 50);
+	rem = taka % 50;
+	
+	msg = msg + div + ' nota(s) de R$ 50.00\r\n';
+	
+	taka = rem;
+	
+	//--------------------
+	div = Math.trunc(taka / 20);
+	rem = taka % 20;
+	
+	msg = msg + div + ' nota(s) de R$ 20.00\r\n';
+	
+	taka = rem;
+	
+	//--------------------
+	div = Math.trunc(taka / 10);
+	rem = taka % 10;
+	
+	msg = msg + div + ' nota(s) de R$ 10.00\r\n';
+	
+	taka = rem;
+	
+	//--------------------
+	div = Math.trunc(taka / 5);
+	rem = taka % 5;
+	
+	msg = msg + div + ' nota(s) de R$ 5.00\r\n';
+	
+	taka = rem;
+	
+	
+	//--------------------
+	div = Math.trunc(taka / 2);
+	rem = taka % 2;
+	
+	msg = msg + div + ' nota(s) de R$ 2.00\r\n';
+	
+	taka = rem;
+	alert(msg);
+	
+	var msg = 'MOEDAS: \r\n';
+	
+		var taka = document.getElementById("inputA").value;
+	var div = Math.trunc(taka / 1.00);
+	var rem = taka % 1.00;
+	
+	msg = msg + div + ' moeda(s) de R$ 1.00\r\n';
+	
+	taka = rem;
+	
+	div = Math.trunc(taka / 0.50);
+	rem = taka % 0.50;
+	
+	msg = msg + div + 'moeda(s) de R$ 0.50\r\n';
+	
+	taka = rem;
+	
+	//--------------------
+	div = Math.trunc(taka / 0.25);
+	rem = taka % 0.25;
+	
+	msg = msg + div + 'moeda(s) de R$ 0.25\r\n';
+	
+	taka = rem;
+	
+	//--------------------
+	div = Math.trunc(taka / 0.10);
+	rem = taka % 0.10;
+	
+	msg = msg + div + 'moeda(s) de R$ 0.10\r\n';
+	
+	taka = rem;
+	
+	//--------------------
+	div = Math.trunc(taka / 0.05);
+	rem = taka %0.05;
+	
+	msg = msg + div + 'moeda(s) de R$ 0.05\r\n';
+	
+	taka = rem;
+	
+	//--------------------
+	div = Math.trunc(taka / 0.01);
+	rem = taka % 0.01;
+	
+	msg = msg + div + 'moeda(s) de R$ 0.01\r\n';
+	
+	taka = rem;
+	
+	alert(msg);
+}
+</script>
+
+</head>
+
+<body>
+<input id="inputA" />
+<input id="buttonA" type="submit" value="Calculate" onclick="calculate()" /> 
+</body>
+</html>
+}
+<

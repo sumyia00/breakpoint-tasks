@@ -1,0 +1,24 @@
+<html>
+<head>
+
+<script type="text/javascript">
+
+function calculate()
+{
+	var pi = 3.14159;
+	var R = document.getElementById("inputA").value;
+	var A = pi*R*R;
+	
+	A = parseFloat(A).toFixed(4);
+	
+	alert('A='+ A);
+}
+</script>
+
+</head>
+
+<body>
+<input id="inputA" />
+<input id="buttonA" type="submit" value="Calculate" onclick="calculate()" /> 
+</body>
+</html>
