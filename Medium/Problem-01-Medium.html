@@ -1,0 +1,29 @@
+ <!DOCTIME html>
+<html>
+<head>
+<tittle></tittle>
+<script type="text/javascript">
+function calculate()
+{
+	var nums = [2,7,11,15]; 
+	var target = 9;
+	
+	for (let i = 0; i < nums.length; i++) 
+	{
+		for (let j = i+1; j < nums.length; j++) 
+		{
+			if(nums[i]+nums[j]==target)
+			{
+				alert(i + "," + j);
+				return;
+			}
+		}
+	}
+}
+</script>
+</head>
+<body>
+<input type="submit" value="Show" onclick="calculate()"/>
+</body>
+
+</html>

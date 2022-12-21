@@ -1,0 +1,30 @@
+<html>
+<head>
+<script type="text/javascript">
+function calculate()
+{
+	var nums = [9,6,4,2,3,5,7,0,1];
+	nums.sort();
+	
+	for (let i = 0; i < nums.length; i++) 
+	{
+		if(i != nums[i])
+		{
+			alert(i);
+			return;
+		}
+		
+		if(i == nums.length-1)
+		{
+			alert(i+1);
+			return;
+		}
+	}
+}
+</script>
+</head>
+<body>
+<input type="submit" value="Show" onclick="calculate()"/>
+</body>
+
+</html>
